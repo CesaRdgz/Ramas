@@ -1,2 +1,6 @@
 Cesar Rodriguez
+<<<<<<< HEAD
 Grupo B
+=======
+1DAW
+>>>>>>> Ramas-experimental
