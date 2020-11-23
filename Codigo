@@ -1,0 +1,241 @@
+#Carpeta casa
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa
+$ git init
+Initialized empty Git repository in C:/Users/César Rodríguez/Desktop/Entornos/Carpeta Casa/.git
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git branch practicaRama
+fatal: Not a valid object name: 'master'.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git branch practicaRama
+fatal: Not a valid object name: 'master'.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git branch
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git add Ramas.txt
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git commit -m"Primera version Master"
+[master (root-commit) 9d92982] Primera version Master
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Ramas.txt
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git push https://github.com/CesaRdgz/Ramas.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/CesaRdgz/Ramas.git master
+
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git push --set-upstream https://github.com/CesaRdgz/Ramas.git master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CesaRdgz/Ramas.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'https://github.com/CesaRdgz/Ramas.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Ramas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git add Ramas.txt
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git commit -m "Segunda version Master"
+[master f88ff23] Segunda version Master
+ 1 file changed, 1 insertion(+)
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git push https://github.com/CesaRdgz/Ramas.git
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CesaRdgz/Ramas.git
+   9d92982..f88ff23  master -> master
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git branch Ramas-experimental
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git branch
+  Ramas-experimental
+* master
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git checkout Ramas-experimental
+Switched to branch 'Ramas-experimental'
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$ git status
+On branch Ramas-experimental
+nothing to commit, working tree clean
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$ git status
+On branch Ramas-experimental
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Ramas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$ git add Ramas.txt
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$ git commit -m "Primera version Experimental"
+[Ramas-experimental c1362b4] Primera version Experimental
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$ git push https://github.com/CesaRdgz/Ramas.git
+fatal: The current branch Ramas-experimental has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/CesaRdgz/Ramas.git Ramas-experimental
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$  git push --set-upstream https://github.com/CesaRdgz/Ramas.git Ramas-experimental
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Ramas-experimental' on GitHub by visiting:
+remote:      https://github.com/CesaRdgz/Ramas/pull/new/Ramas-experimental
+remote:
+To https://github.com/CesaRdgz/Ramas.git
+ * [new branch]      Ramas-experimental -> Ramas-experimental
+Branch 'Ramas-experimental' set up to track remote branch 'Ramas-experimental' from 'https://gi
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (Ramas-experimental)
+$ git checkout master
+Switched to branch 'master'
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git add Ramas.txt
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git commit -m "Tercera Version Master"
+[master 413cd31] Tercera Version Master
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git push  git push --set-upstream https://github.com/CesaRdgz/Ramas.git master
+fatal: invalid refspec 'https://github.com/CesaRdgz/Ramas.git'
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Casa (master)
+$ git push https://github.com/CesaRdgz/Ramas.git
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CesaRdgz/Ramas.git
+   f88ff23..413cd31  master -> master
+   
+#Carpeta Insti
+   
+ 
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto
+$ git init
+Initialized empty Git repository in C:/Users/César Rodríguez/Desktop/Entornos/Carpeta Institu
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto (master)
+$ git clone https://github.com/CesaRdgz/Ramas.git
+Cloning into 'Ramas'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 12 (delta 2), reused 10 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (2/2), done.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto (master)
+$ git checkout
+fatal: You are on a branch yet to be born
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto (master)
+$ cd Ramas
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master)
+$ git checkout
+Your branch is up to date with 'origin/master'.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master)
+$ git checkout Ramas-experimental
+Switched to a new branch 'Ramas-experimental'
+Branch 'Ramas-experimental' set up to track remote branch 'Ramas-experimental' from 'origin'.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (Ramas-exp
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master)
+$ git merge Ramas-experimental
+Auto-merging Ramas.txt
+CONFLICT (content): Merge conflict in Ramas.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master|ME
+$ git push https://github.com/CesaRdgz/Ramas.git
+Everything up-to-date
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master|ME
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Ramas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master|ME
+$ git add Ramas.txt
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master|ME
+$ git commit -m "Version Carpeta Insti"
+[master 665c0f0] Version Carpeta Insti
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+César Rodríguez@DESKTOP-NPT1OG3 MINGW64 ~/Desktop/Entornos/Carpeta Instituto/Ramas (master)
+$ git push https://github.com/CesaRdgz/Ramas.git
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CesaRdgz/Ramas.git
+   413cd31..665c0f0  master -> master
+  
